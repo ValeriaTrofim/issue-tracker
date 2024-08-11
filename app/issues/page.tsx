@@ -37,5 +37,6 @@ import IssueActions from './IssueActions';
 </div>
   )
 }
+export const dynamic = 'force-dynamic';
 
 export default IssuesPage
