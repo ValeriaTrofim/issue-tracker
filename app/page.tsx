@@ -1,12 +1,8 @@
-import React from 'react'
-import { Button } from '@radix-ui/themes';
-import Link from 'next/link';
+import React from "react";
+import Pagination from "./components/Pagination";
 
 const IssuesPage = () => {
-  return (
-    
-    <div><Button><Link href="/issues/new">New Issue</Link></Button></div>
-  )
-}
+  return <Pagination itemCount={100} pageSize={10} currentPage={10} />;
+};
 
-export default IssuesPage
+export default IssuesPage;
