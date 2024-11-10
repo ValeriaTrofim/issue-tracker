@@ -1,34 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Issue Tracker
 
-## Getting Started
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-First, run the development server:
+### About The Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+The issue tracker app is a tool designed to help manage and track issues, tasks, bugs, or any other type of work item that needs to be addressed.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Users can create new "issues" to report problems, bugs, or tasks that need attention.
+- Issues are managed with statuses that reflect their progress, such as Open, In Progress, Closed.
+- The issue can be assigned to a team member responsible for addressing it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- React
+- TypeScript
+- Next.js
+- Prisma
+- Tailwind CSS
 
-## Learn More
+### Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+#### Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- node v22.5.1
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Installation
 
-## Deploy on Vercel
+1. Clone the repo
+   ```sh
+   git clone git@github.com:ValeriaTrofim/issue-tracker.git
+   ```
+2. Install packages
+   ```sh
+   npm install
+   ```
+3. Set up MySQl and Prisma for the Database Url
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Get the Google Client Id and Google Client Secret from https://console.cloud.google.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Generate authentication token for NextAuth Secret
+
+6. Create a .env file
+
+   ```sh
+   DATABASE_URL=""
+   NEXTAUTH_URL="http://localhost:3000"
+   NEXTAUTH_SECRET=""
+   GOOGLE_CLIENT_ID=""
+   GOOGLE_CLIENT_SECRET=""
+   ```
+
+   ### Contact
+
+Valeria Trofim - valeria.trofim17@gmail.com
+
+Project Link: [https://issue-tracker-sand-seven.vercel.app](https://issue-tracker-sand-seven.vercel.app)
